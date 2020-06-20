@@ -1,3 +1,4 @@
 /home/dyj/ClionProjects/C_thread/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /home/dyj/ClionProjects/C_thread/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/dyj/ClionProjects/C_thread/cmake-build-debug/CMakeFiles/part_2.dir
 /home/dyj/ClionProjects/C_thread/cmake-build-debug/CMakeFiles/C_thread.dir

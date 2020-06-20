@@ -37,6 +37,52 @@
 					<DistClean command="/usr/bin/make -j6 -f &quot;/home/dyj/ClionProjects/C_thread/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="part_2">
+				<Option output="/home/dyj/ClionProjects/C_thread/cmake-build-debug/part_2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dyj/ClionProjects/C_thread/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/dyj/ClionProjects/C_thread/cmake-build-debug/Makefile&quot;  VERBOSE=1 part_2"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/dyj/ClionProjects/C_thread/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/dyj/ClionProjects/C_thread/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/dyj/ClionProjects/C_thread/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="part_2/fast">
+				<Option output="/home/dyj/ClionProjects/C_thread/cmake-build-debug/part_2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dyj/ClionProjects/C_thread/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/dyj/ClionProjects/C_thread/cmake-build-debug/Makefile&quot;  VERBOSE=1 part_2/fast"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/dyj/ClionProjects/C_thread/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/dyj/ClionProjects/C_thread/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/dyj/ClionProjects/C_thread/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="C_thread">
 				<Option output="/home/dyj/ClionProjects/C_thread/cmake-build-debug/C_thread" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/dyj/ClionProjects/C_thread/cmake-build-debug"/>
@@ -87,7 +133,11 @@
 		<Unit filename="/home/dyj/ClionProjects/C_thread/main.cpp">
 			<Option target="C_thread"/>
 		</Unit>
+		<Unit filename="/home/dyj/ClionProjects/C_thread/part_2.cpp">
+			<Option target="part_2"/>
+		</Unit>
 		<Unit filename="/home/dyj/ClionProjects/C_thread/thread.h">
+			<Option target="part_2"/>
 			<Option target="C_thread"/>
 		</Unit>
 		<Unit filename="/home/dyj/ClionProjects/C_thread/CMakeLists.txt">

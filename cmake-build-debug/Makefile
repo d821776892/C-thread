@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named part_2
+
+# Build rule for target.
+part_2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 part_2
+.PHONY : part_2
+
+# fast build rule for target.
+part_2/fast:
+	$(MAKE) -f CMakeFiles/part_2.dir/build.make CMakeFiles/part_2.dir/build
+.PHONY : part_2/fast
+
+#=============================================================================
 # Target rules for targets named C_thread
 
 # Build rule for target.
@@ -150,6 +163,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/C_thread.dir/build.make CMakeFiles/C_thread.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+part_2.o: part_2.cpp.o
+
+.PHONY : part_2.o
+
+# target to build an object file
+part_2.cpp.o:
+	$(MAKE) -f CMakeFiles/part_2.dir/build.make CMakeFiles/part_2.dir/part_2.cpp.o
+.PHONY : part_2.cpp.o
+
+part_2.i: part_2.cpp.i
+
+.PHONY : part_2.i
+
+# target to preprocess a source file
+part_2.cpp.i:
+	$(MAKE) -f CMakeFiles/part_2.dir/build.make CMakeFiles/part_2.dir/part_2.cpp.i
+.PHONY : part_2.cpp.i
+
+part_2.s: part_2.cpp.s
+
+.PHONY : part_2.s
+
+# target to generate assembly for a file
+part_2.cpp.s:
+	$(MAKE) -f CMakeFiles/part_2.dir/build.make CMakeFiles/part_2.dir/part_2.cpp.s
+.PHONY : part_2.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -158,10 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... part_2"
 	@echo "... C_thread"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... part_2.o"
+	@echo "... part_2.i"
+	@echo "... part_2.s"
 .PHONY : help
 
 
